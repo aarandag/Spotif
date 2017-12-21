@@ -1,6 +1,6 @@
-package Persistence2;
+package Persistence;
 
-import Domain2.*;
+import Domain.*;
 
 public class AlbumDao extends GeneralDao {
 
