@@ -42,7 +42,7 @@ public class Manager {
 	 * 
 	 * @param author
 	 */
-	public Song[] searchSongs(string author) {
+	public Song[] searchSongs(String author) {
 		// TODO - implement Manager.searchSongs
 		throw new UnsupportedOperationException();
 	}
@@ -51,7 +51,7 @@ public class Manager {
 	 * 
 	 * @param title
 	 */
-	public Song[] searchSongsbyTitle(string title) {
+	public Song[] searchSongsbyTitle(String title) {
 		// TODO - implement Manager.searchSongsbyTitle
 		throw new UnsupportedOperationException();
 	}
@@ -70,13 +70,17 @@ public class Manager {
 	 * @param id
 	 * @param password
 	 */
-	public User login(int id, string password) {
+	public User login(int id, String password) {
 		// TODO - implement Manager.login
 		throw new UnsupportedOperationException();
 	}
 
-	public void sendMessage() {
-		// TODO - implement Manager.sendMessage
+	/**
+	 * 
+	 * @param song
+	 */
+	public void play(Song song) {
+		// TODO - implement Manager.play
 		throw new UnsupportedOperationException();
 	}
 
