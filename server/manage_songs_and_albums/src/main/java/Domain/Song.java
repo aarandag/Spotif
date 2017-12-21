@@ -29,7 +29,7 @@ public class Song {
 	 * 
 	 * @param title
 	 */
-	public void setTitle(string title) {
+	public void setTitle(String title) {
 		this.title = title;
 	}
 
@@ -41,7 +41,7 @@ public class Song {
 	 * 
 	 * @param author
 	 */
-	public void setAuthor(string author) {
+	public void setAuthor(String author) {
 		this.author = author;
 	}
 
