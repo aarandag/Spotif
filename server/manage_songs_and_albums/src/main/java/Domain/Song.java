@@ -1,13 +1,13 @@
-package Domain2;
+package Domain;
 
 public class Song {
 
-	private string title;
-	private string author;
+	private String title;
+	private String author;
 	private Album album;
-	private string description;
+	private String description;
 	private double price;
-	private string genre;
+	private String genre;
 
 	/**
 	 * 
@@ -16,12 +16,12 @@ public class Song {
 	 * @param album
 	 * @param price
 	 */
-	public Song(string title, string author, Album album, double price) {
+	public Song(String title, String author, Album album, double price) {
 		// TODO - implement Song.Song
 		throw new UnsupportedOperationException();
 	}
 
-	public string getTitle() {
+	public String getTitle() {
 		return this.title;
 	}
 
@@ -33,7 +33,7 @@ public class Song {
 		this.title = title;
 	}
 
-	public string getAuthor() {
+	public String getAuthor() {
 		return this.author;
 	}
 
@@ -57,7 +57,7 @@ public class Song {
 		this.album = album;
 	}
 
-	public string getDescription() {
+	public String getDescription() {
 		return this.description;
 	}
 
@@ -65,7 +65,7 @@ public class Song {
 	 * 
 	 * @param description
 	 */
-	public void setDescription(string description) {
+	public void setDescription(String description) {
 		this.description = description;
 	}
 
@@ -81,7 +81,7 @@ public class Song {
 		this.price = price;
 	}
 
-	public string getGenre() {
+	public String getGenre() {
 		return this.genre;
 	}
 
@@ -89,7 +89,7 @@ public class Song {
 	 * 
 	 * @param genre
 	 */
-	public void setGenre(string genre) {
+	public void setGenre(String genre) {
 		this.genre = genre;
 	}
 
