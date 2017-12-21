@@ -13,7 +13,7 @@ public class messageDAO extends GeneralDao {
 	 * 
 	 * @param messageID
 	 */
-	public Message findByMID(string messageID) {
+	public Message findByMID(String messageID) {
 		// TODO - implement messageDAO.findByMID
 		throw new UnsupportedOperationException();
 	}
