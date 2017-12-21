@@ -13,7 +13,7 @@ public class SongDao extends GeneralDao {
 	 * 
 	 * @param title
 	 */
-	public Song findByTitle(string title) {
+	public Song findByTitle(String title) {
 		// TODO - implement SongDao.findByTitle
 		throw new UnsupportedOperationException();
 	}
@@ -22,7 +22,7 @@ public class SongDao extends GeneralDao {
 	 * 
 	 * @param author
 	 */
-	public Song findByAuthor(string author) {
+	public Song findByAuthor(String author) {
 		// TODO - implement SongDao.findByAuthor
 		throw new UnsupportedOperationException();
 	}
