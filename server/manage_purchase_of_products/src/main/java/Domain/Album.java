@@ -2,10 +2,10 @@ package Domain;
 
 public class Album {
 
-	private string title;
-	private string author;
+	private String title;
+	private String author;
 	private double price;
-	private string description;
+	private String description;
 	private Song[] songs;
 
 	/**
@@ -15,12 +15,12 @@ public class Album {
 	 * @param price
 	 * @param songs
 	 */
-	public Album(string title, string author, double price, Song[] songs) {
+	public Album(String title, String author, double price, Song[] songs) {
 		// TODO - implement Album.Album
 		throw new UnsupportedOperationException();
 	}
 
-	public string getTitle() {
+	public String getTitle() {
 		return this.title;
 	}
 
@@ -28,7 +28,7 @@ public class Album {
 	 * 
 	 * @param title
 	 */
-	public void setTitle(string title) {
+	public void setTitle(String title) {
 		this.title = title;
 	}
 
@@ -40,7 +40,7 @@ public class Album {
 	 * 
 	 * @param author
 	 */
-	public void setAuthor(string author) {
+	public void setAuthor(String author) {
 		this.author = author;
 	}
 
@@ -64,7 +64,7 @@ public class Album {
 	 * 
 	 * @param description
 	 */
-	public void setDescription(string description) {
+	public void setDescription(String description) {
 		this.description = description;
 	}
 
