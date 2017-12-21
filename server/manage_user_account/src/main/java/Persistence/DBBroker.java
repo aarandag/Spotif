@@ -1,5 +1,6 @@
-package Persistence;
+package Persistence2;
 import java.sql.ResultSet;
+import java.sql.Connecion;
 
 public class DBBroker {
 
