@@ -2,10 +2,10 @@ package Persistence;
 
 public class DBBroker {
 
-	private string connectionString;
+	private String connectionString;
 	private DBBroker instance;
 	private Connection connection;
-	private string dbPath;
+	private String dbPath;
 
 	public DBBroker getInstance() {
 		return this.instance;
