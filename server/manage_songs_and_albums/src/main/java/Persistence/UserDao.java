@@ -1,6 +1,6 @@
 package Persistence;
 
-import Persistence2.*;
+import Persistence.*;
 
 public class UserDao extends GeneralDao {
 
