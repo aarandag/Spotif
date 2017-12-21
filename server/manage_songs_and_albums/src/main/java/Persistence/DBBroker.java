@@ -1,4 +1,4 @@
-package Persistence2;
+package Persistence;
 import java.sql.ResultSet;
 import java.sql.Connection;
 
