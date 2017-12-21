@@ -1,4 +1,4 @@
-package Persistence2;
+package Persistence;
 
 public class GeneralDao {
 
