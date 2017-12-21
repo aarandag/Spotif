@@ -13,7 +13,7 @@ public class UserDao extends GeneralDao {
 	 * 
 	 * @param id
 	 */
-	public User findByID(string id) {
+	public User findByID(String id) {
 		// TODO - implement UserDao.findByID
 		throw new UnsupportedOperationException();
 	}
