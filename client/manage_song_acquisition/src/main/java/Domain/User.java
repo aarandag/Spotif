@@ -2,9 +2,9 @@ package Domain;
 
 public class User {
 
-	private string name;
+	private String name;
 	private int id;
-	private string password;
+	private String password;
 	private Song[] listsOfSongs;
 
 	public int getId() {
@@ -15,11 +15,11 @@ public class User {
 		this.id = id;
 	}
 
-	public string getPassword() {
+	public String getPassword() {
 		return this.password;
 	}
 
-	public void setPassword(string password) {
+	public void setPassword(String password) {
 		this.password = password;
 	}
 
@@ -28,12 +28,12 @@ public class User {
 	 * @param id
 	 * @param password
 	 */
-	public User(int id, string password) {
+	public User(int id, String password) {
 		// TODO - implement User.User
 		throw new UnsupportedOperationException();
 	}
 
-	public string getName() {
+	public String getName() {
 		return this.name;
 	}
 
@@ -41,7 +41,7 @@ public class User {
 	 * 
 	 * @param name
 	 */
-	public void setName(string name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 
@@ -50,7 +50,7 @@ public class User {
 	 * @param destUser
 	 * @param message
 	 */
-	public void sendMessage(User destUser, string message) {
+	public void sendMessage(User destUser, String message) {
 		// TODO - implement User.sendMessage
 		throw new UnsupportedOperationException();
 	}
