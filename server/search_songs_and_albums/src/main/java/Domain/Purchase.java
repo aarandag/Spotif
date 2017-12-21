@@ -1,4 +1,4 @@
-package Domain2;
+package Domain;
 
 public class Purchase {
 
