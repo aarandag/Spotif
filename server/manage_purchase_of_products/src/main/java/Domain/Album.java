@@ -32,7 +32,7 @@ public class Album {
 		this.title = title;
 	}
 
-	public string getAuthor() {
+	public String getAuthor() {
 		return this.author;
 	}
 
@@ -56,7 +56,7 @@ public class Album {
 		this.price = price;
 	}
 
-	public string getDescription() {
+	public String getDescription() {
 		return this.description;
 	}
 
