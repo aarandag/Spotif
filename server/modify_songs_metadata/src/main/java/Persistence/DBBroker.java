@@ -15,7 +15,7 @@ public class DBBroker {
 	 * 
 	 * @param query
 	 */
-	public ResultSet read(string query) {
+	public ResultSet read(String query) {
 		// TODO - implement DBBroker.read
 		throw new UnsupportedOperationException();
 	}
@@ -29,7 +29,7 @@ public class DBBroker {
 	 * 
 	 * @param query
 	 */
-	public int insert(string query) {
+	public int insert(String query) {
 		// TODO - implement DBBroker.insert
 		throw new UnsupportedOperationException();
 	}
@@ -38,7 +38,7 @@ public class DBBroker {
 	 * 
 	 * @param query
 	 */
-	public int delete(string query) {
+	public int delete(String query) {
 		// TODO - implement DBBroker.delete
 		throw new UnsupportedOperationException();
 	}
