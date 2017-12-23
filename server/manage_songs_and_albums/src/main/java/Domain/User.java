@@ -56,16 +56,16 @@ public class User {
 	public void sendMessage(User destUser, String message) {
 	}
 
-	publicArrayList<Song> getListsOfSongs() {
-		return this.listsOfSongs;
+	public ArrayList<Song> getListsOfSongs() {
+		return this.listOfSongs;
 	}
 
 	/**
 	 * 
 	 * @param listsOfSongs
 	 */
-	public void setListsOfSongs(ArrayList<Song> listsOfSongs) {
-		this.listsOfSongs = listsOfSongs;
+	public void setListsOfSongs(ArrayList<Song> listOfSongs) {
+		this.listOfSongs = listOfSongs;
 	}
 
 }
