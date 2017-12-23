@@ -72,7 +72,7 @@ public class TestDomain {
     public void testUserinformation() {
     	user1.setName("Donald Trump");
     	user2.setName("Pepe");
-    	user2.setListOfSongs(album1.getSongs());
+    	user2.setListsOfSongs(album1.getSongs());
     	user1.sendMessage(user2, (user2.getName()+" with id: "+user2.getId()+ ", You are fired!"));
     	user1.setPassword("New Password");
     	
