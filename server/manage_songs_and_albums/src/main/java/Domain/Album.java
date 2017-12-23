@@ -1,4 +1,5 @@
 package Domain;
+import java.util.*;
 
 public class Album {
 
@@ -6,7 +7,7 @@ public class Album {
 	private String author;
 	private double price;
 	private String description;
-	private Song[] songs;
+	private ArrayList<Song> songs;
 
 	/**
 	 * 
@@ -15,9 +16,12 @@ public class Album {
 	 * @param price
 	 * @param songs
 	 */
-	public Album(String title, String author, double price, Song[] songs) {
-		// TODO - implement Album.Album
-		throw new UnsupportedOperationException();
+	public Album(String title, String author, double price, ArrayList<Song> songs) {
+	    this.title = title;
+	    this.author = author;
+	    this.price = price;
+	    this.description = description;
+	    this.songs = songs;
 	}
 
 	public String getTitle() {
@@ -68,7 +72,7 @@ public class Album {
 		this.description = description;
 	}
 
-	public Song[] getSongs() {
+	public ArrayList<Song> getSongs() {
 		return this.songs;
 	}
 
@@ -76,8 +80,22 @@ public class Album {
 	 * 
 	 * @param songs
 	 */
-	public void setSongs(Song[] songs) {
+	public void setSongs(ArrayList<Song> songs) {
 		this.songs = songs;
 	}
 
+        public void updateSongs() {
+	    for(int i = 0; i < songs.size(); i++) {
+		    songs.get(i).setAuthor(author);
+		    songs.get(i).setAlbum(this);
+		}
+       }
+
+       public void addSong(Song song) {
+	       songs.add(song);
+       }
+
+       public void deleteSong(Song song) {
+	      songs.remove(song);
+       }
 }

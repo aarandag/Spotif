@@ -17,8 +17,15 @@ public class Song {
 	 * @param price
 	 */
 	public Song(String title, String author, Album album, double price) {
-		// TODO - implement Song.Song
-		throw new UnsupportedOperationException();
+	        this.title = title;
+		this.author = author;
+		this.album = album;
+		this.price = price;
+	}
+        public Song(String title, String author, double price) {
+	    this.title = title;
+	    this.author = author;
+	    this.price = price;
 	}
 
 	public String getTitle() {
@@ -43,7 +50,7 @@ public class Song {
 	 */
 	public void setAuthor(String author) {
 		this.author = author;
-	}
+ 	}
 
 	public Album getAlbum() {
 		return this.album;
