@@ -63,6 +63,7 @@ public class TestDomain {
     	String title= album1.getTitle();
     	title = title + "v2";
     	album1.setTitle(title);
+	assertEquals(album1.getTitle(), title);
     	album1.setDescription("This is the first album of Pink Floy and Bob Marley");
     	album1.setPrice(8);
     	
@@ -75,6 +76,17 @@ public class TestDomain {
     	user2.setListsOfSongs(album1.getSongs());
     	user1.sendMessage(user2, (user2.getName()+" with id: "+user2.getId()+ ", You are fired!"));
     	user1.setPassword("New Password");
+    	assertFalse(user1==user2);
+    }
+
+    @Test
+    public void testCreationOfSongs() {
+    	Song song1 = new Song("1", "2", 3);
+    	Song song2= new Song("1", "2", album1, 3);
+    	song1.setAlbum(album1);
+	//we create 2 songs with the same values but different constructor and they are not the same.
+    	assertFalse(song1==song2);
     	
     }
+
 }
