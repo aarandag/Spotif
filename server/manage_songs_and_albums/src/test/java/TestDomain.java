@@ -8,6 +8,8 @@ public class TestDomain {
 
     private ArrayList<Song> songs_album1;
     private Album album1;
+    private User user1;
+    private User user2;
     
     @Before
     public void setUp() {
@@ -19,6 +21,8 @@ public class TestDomain {
 			   19.99,
 			   songs_album1);
 	album1.updateSongs();
+	user1= new User(1,"alumno");
+	user2 = new User(2,"password");
     }
 
     @Test
@@ -44,9 +48,11 @@ public class TestDomain {
 	}
 	assertTrue(price <= album1.getPrice());
     }
-	@Test
+    @Test
     public void testAlbumAddOneSong(){
     	Song testSong = new Song("Hello", "ArtistOfHello", 0.99);
+    	testSong.setGenre("Flamenco");
+    	testSong.setDescription(testSong.getTitle() + " with a cost of "+ testSong.getPrice()+ " its the most important song of the "+ testSong.getGenre() + " genre");
     	album1.addSong(testSong);
     	album1.deleteSong(testSong);   	
     }
@@ -58,7 +64,17 @@ public class TestDomain {
     	title = title + "v2";
     	album1.setTitle(title);
     	album1.setDescription("This is the first album of Pink Floy and Bob Marley");
+    	album1.setPrice(8);
     	
     }
-	
+    
+    @Test
+    public void testUserinformation() {
+    	user1.setName("Donald Trump");
+    	user2.setName("Pepe");
+    	user2.setListOfSongs(album1.getSongs());
+    	user1.sendMessage(user2, (user2.getName()+" with id: "+user2.getId()+ ", You are fired!"));
+    	user1.setPassword("New Password");
+    	
+    }
 }
