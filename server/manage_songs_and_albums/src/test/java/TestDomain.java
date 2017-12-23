@@ -44,4 +44,21 @@ public class TestDomain {
 	}
 	assertTrue(price <= album1.getPrice());
     }
+	@Test
+    public void testAlbumAddOneSong(){
+    	Song testSong = new Song("Hello", "ArtistOfHello", 0.99);
+    	album1.addSong(testSong);
+    	album1.deleteSong(testSong);   	
+    }
+    
+    @Test
+    public void testModifyAlbumInformation(){
+    	album1.setAuthor("Pink Floyd ft Bob Marley");
+    	String title= album1.getTitle();
+    	title = title + "v2";
+    	album1.setTitle(title);
+    	album1.setDescription("This is the first album of Pink Floy and Bob Marley");
+    	
+    }
+	
 }
