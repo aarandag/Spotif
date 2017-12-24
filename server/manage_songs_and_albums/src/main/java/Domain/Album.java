@@ -14,7 +14,6 @@ public class Album {
 	    this.title = title;
 	    this.author = author;
 	    this.price = price;
-	    this.description = description;
 	    this.songs = songs;
 	}
 
