@@ -9,13 +9,6 @@ public class Song {
 	private double price;
 	private String genre;
 
-	/**
-	 * 
-	 * @param title
-	 * @param author
-	 * @param album
-	 * @param price
-	 */
 	public Song(String title, String author, Album album, double price) {
 	        this.title = title;
 		this.author = author;
@@ -32,10 +25,6 @@ public class Song {
 		return this.title;
 	}
 
-	/**
-	 * 
-	 * @param title
-	 */
 	public void setTitle(String title) {
 		this.title = title;
 	}
@@ -44,10 +33,7 @@ public class Song {
 		return this.author;
 	}
 
-	/**
-	 * 
-	 * @param author
-	 */
+
 	public void setAuthor(String author) {
 		this.author = author;
  	}
@@ -56,10 +42,7 @@ public class Song {
 		return this.album;
 	}
 
-	/**
-	 * 
-	 * @param album
-	 */
+
 	public void setAlbum(Album album) {
 		this.album = album;
 	}
@@ -68,10 +51,7 @@ public class Song {
 		return this.description;
 	}
 
-	/**
-	 * 
-	 * @param description
-	 */
+
 	public void setDescription(String description) {
 		this.description = description;
 	}
@@ -80,10 +60,7 @@ public class Song {
 		return this.price;
 	}
 
-	/**
-	 * 
-	 * @param price
-	 */
+
 	public void setPrice(double price) {
 		this.price = price;
 	}
@@ -92,10 +69,7 @@ public class Song {
 		return this.genre;
 	}
 
-	/**
-	 * 
-	 * @param genre
-	 */
+
 	public void setGenre(String genre) {
 		this.genre = genre;
 	}
