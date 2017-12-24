@@ -29,30 +29,15 @@ public class User {
 		this.password = password;
 	}
 
-	/**
-	 * 
-	 * @param id
-	 * @param password
-	 */
-
-
 	public String getName() {
 		return this.name;
 	}
 
-	/**
-	 * 
-	 * @param name
-	 */
+
 	public void setName(String name) {
 		this.name = name;
 	}
 
-	/**
-	 * 
-	 * @param destUser
-	 * @param message
-	 */
 	public void sendMessage(User destUser, String message) {
 	}
 
@@ -60,10 +45,6 @@ public class User {
 		return this.listOfSongs;
 	}
 
-	/**
-	 * 
-	 * @param listsOfSongs
-	 */
 	public void setListsOfSongs(ArrayList<Song> listOfSongs) {
 		this.listOfSongs = listOfSongs;
 	}
