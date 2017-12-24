@@ -7,9 +7,14 @@ import org.junit.Test;
 public class TestDomain {
 
     private ArrayList<Song> songs_album1;
+	private ArrayList<Song> songs_album2;
     private Album album1;
+	private Album album2;
     private User user1;
     private User user2;
+	private Song song3;
+    private Song song4;
+    private Song song5;
     
     @Before
     public void setUp() {
@@ -23,6 +28,14 @@ public class TestDomain {
 	album1.updateSongs();
 	user1= new User(1,"alumno");
 	user2 = new User(2,"password");
+	    album2= new Album("Grandes Exitos", "Antonio Molina", 20.99, songs_album2);
+	    song3 = new Song("Soy minero", "Antonio Molina",album2,  1.99);
+	song4 = new Song("Cocinero cocinero", "Antonio Molina", album2, -1.68);
+	    song5= new Song("El Agua del avellano", null, album2, 1.99);
+
+	    
+			    
+	    
     }
 
     @Test
@@ -88,5 +101,18 @@ public class TestDomain {
     	assertFalse(song1==song2);
     	
     }
+	@Test
+	public void testSongsConsistency(){		
+		//normal song
+		assertTrue(songs_album2.add(song3));
+		//song with negative price
+	    assertTrue(songs_album2.add(song4));
+		//song with null author
+	    assertTrue(songs_album2.add(song5));
+		//enter this songs
+	    assertTrue(album2.setSongs(songs_album2));	
+	
+	}
+	
 
 }
