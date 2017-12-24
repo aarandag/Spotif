@@ -114,8 +114,9 @@ public class TestDomain {
 	    assertTrue(songs_album2.add(song5));
 		songs_album2.add(song5);
 		//enter this songs
-		album2.setSongs(songs_album2)
+		album2.setSongs(songs_album2);
 		for(int i = 0; i < album2.getSongs().size(); i++) {
+			//check if the songs in the album and the songs in the list are the same
 		    assertEquals(songs_album2.get(i), album2.getSongs().get(i));
 		}
 	}
