@@ -9,13 +9,7 @@ public class Album {
 	private String description;
 	private ArrayList<Song> songs;
 
-	/**
-	 * 
-	 * @param title
-	 * @param author
-	 * @param price
-	 * @param songs
-	 */
+
 	public Album(String title, String author, double price, ArrayList<Song> songs) {
 	    this.title = title;
 	    this.author = author;
@@ -28,10 +22,7 @@ public class Album {
 		return this.title;
 	}
 
-	/**
-	 * 
-	 * @param title
-	 */
+
 	public void setTitle(String title) {
 		this.title = title;
 	}
@@ -40,10 +31,7 @@ public class Album {
 		return this.author;
 	}
 
-	/**
-	 * 
-	 * @param author
-	 */
+
 	public void setAuthor(String author) {
 		this.author = author;
 	}
@@ -52,10 +40,7 @@ public class Album {
 		return this.price;
 	}
 
-	/**
-	 * 
-	 * @param price
-	 */
+
 	public void setPrice(double price) {
 		this.price = price;
 	}
@@ -64,10 +49,7 @@ public class Album {
 		return this.description;
 	}
 
-	/**
-	 * 
-	 * @param description
-	 */
+
 	public void setDescription(String description) {
 		this.description = description;
 	}
@@ -76,10 +58,7 @@ public class Album {
 		return this.songs;
 	}
 
-	/**
-	 * 
-	 * @param songs
-	 */
+
 	public void setSongs(ArrayList<Song> songs) {
 		this.songs = songs;
 	}
