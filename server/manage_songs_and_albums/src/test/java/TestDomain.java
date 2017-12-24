@@ -19,6 +19,7 @@ public class TestDomain {
     @Before
     public void setUp() {
 	songs_album1 = new ArrayList<Song>();
+	    songs_album2 = new ArrayList<Song>();
 	songs_album1.add(new Song("Time", "Unknown Artist", 4.99));
 	songs_album1.add(new Song("Money", "Unknown Artist", 9.99));
 	album1 = new Album("Dark Side of the Moon",
