@@ -105,16 +105,18 @@ public class TestDomain {
 	public void testSongsConsistency(){		
 		//normal song
 		assertTrue(songs_album2.add(song3));
-		songs_album2.add(song3)
+		songs_album2.add(song3);
 		//song with negative price
 	    assertTrue(songs_album2.add(song4));
-		songs_album2.add(song4)
+		songs_album2.add(song4);
 		//song with null author
 	    assertTrue(songs_album2.add(song5));
-		songs_album2.add(song5)
+		songs_album2.add(song5);
 		//enter this songs
-	    assertTrue(album2.setSongs(songs_album2));	
-	
+		album2.setSongs(songs_album2)
+		for(int i = 0; i < album2.getSongs().size(); i++) {
+		    assertEquals(songs_album2.get(i), album2.getSongs().get(i));
+		}
 	}
 	
 
