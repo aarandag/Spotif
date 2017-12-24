@@ -1,4 +1,4 @@
-package Domain;
+package domain;
 import java.util.*;
 import static org.junit.Assert.*;
 import org.junit.Before;
